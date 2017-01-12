@@ -30,6 +30,7 @@ namespace WebServer
             var restRouteHandler = new RestRouteHandler();
 
             restRouteHandler.RegisterController<LightController>();
+            restRouteHandler.RegisterController<StepperController>();
 
             var configuration = new HttpServerConfiguration()
                 .ListenOnPort(8800)
